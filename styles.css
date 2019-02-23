@@ -13,7 +13,7 @@ footer {
 }
 
 header {
-  height: 150px;
+  height: 100px;
 }
 
 header ul,
@@ -25,10 +25,26 @@ footer ul {
 header li,
 footer li {
   display: inline-block;
-  width: 15%;
+  width: 20%;
   text-align: center;
-  background: #ccc;
-  border-left: 1px #000 solid;
+  text-decoration: none;
+  background: #63f;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 2px #63f;
+  padding: 2px 4px;
+  border: dashed 1px #fff;
+  margin-right: 10px;
+}
+
+header li:hover,
+footer li:hover {
+  border: dotted 1px #fff;
+}
+
+header a,
+footer a {
+  text-decoration: none;
 }
 
 .container {
@@ -43,38 +59,44 @@ footer li {
   margin: 1% 1%;
 }
 
-.contents {
-  width: 980px;
+.content-1 {
+  width: 800px;
   height: 100%;
   float: left;
+  margin: 1% 1%;
 }
 
-/* .wrapper {
-  height: 350px;
-} */
+.title a {
+  text-decoration: none;
+}
+.contents {
+  width: 1200px;
+  height: 100%;
+  float: left;
+  margin: 0 auto
+}
 
 .left-wrapper {
   float: left;
 }
 
-/* .right-wrapper {
-  float: right;
-} */
-
 .sidebar {
-  width: 280px;
+  width: 200px;
   height: 100%;
   float: right;
-  padding: 0;
+  margin: 1% 0.5%;
 }
 
 .sidebar-content {
-width: 90%;
-height: 800px;
-margin: 0 auto;
+  width: 200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.advertise {
+  height: 100%;
 }
 
 footer {
-  position: fixed;
   bottom: 0;
 }
